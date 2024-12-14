@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="RB_logo.png" alt="Logo" width="30">
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button> <!-- Hamburger icon -->
+                <ul class="nav-links">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                </ul>
+                <div class="welcome">Welcome to my Portfolio Website</div>
+            </nav>
+        </header>
+
+
+
+        <section class="image-placeholder">
+            <img src="cover.jpeg" alt="Collage Image" />
+        </section>
+
+        <section class="about">
+            <div class="section-title">About me</div>
+            <p>I am a cool guy. Trust me.</p>
+        </section>
+
+        <section class="education-projects-wrapper">
+            <div class="education">
+                <div class="section-title">Education</div>
+                <p>I went to University. I was there for my favorite restaurant, the only one in town.</p>
+            </div>
+
+            <div class="projects">
+                <div class="section-title">Projects</div>
+                <div class="card" onclick="showDescription()">
+                    <h3>Project 1</h3>
+                    <p>This is my first project.</p>
+                </div>
+                <div class="card" onclick="showDescription()">
+                    <h3>Project 2</h3>
+                    <p>This project focuses on advanced topics.</p>
+                </div>
+                <div class="card" onclick="showDescription()">
+                    <h3>Project 3</h3>
+                    <p>This is a collaborative project.</p>
+                </div>
+                <div id="project-description">Please Click on a project to learn more.</div>
+            </div>
+        </section>
+
+        <section class="experience-blogs-wrapper">
+            <div class="experience" id="experience">
+                <div class="section-title">Experience</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more
+                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+
+            <div class="blogs" id="blogs">
+                <div class="section-title">Blogs</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error dolorum enim quidem eligendi neque
+                    mollitia dignissimos doloremque, quae explicabo nam placeat quos in deleniti amet?
+                    Eveniet maxime repellendus culpa quos!</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <span>user@example.com</span>
+                <span>202.524.65.82</span>
+            </div>
+
+            <div class="vertical-bar left-bar">|</div> <!-- Vertical bar between footer-left and ul -->
+
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+
+            <div class="vertical-bar right-bar">|</div> <!-- Vertical bar between ul and footer-right -->
+
+            <div class="footer-right">
+                <p>© Rubens Benoit, 2024. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
